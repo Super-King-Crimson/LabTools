@@ -60,6 +60,8 @@ alias quit='exit'
 alias ':q'="exit"
 alias pse="ps -e"
 
+# Automatically move to wsl home directory
+alias wsl='wsl \~'
 alias grep='grep --color=auto -i -P'
 
 # Cool grep options:
