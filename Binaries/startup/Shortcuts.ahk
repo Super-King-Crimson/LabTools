@@ -90,8 +90,8 @@ InstallKeybdHook(True)
 !k::Send("{Up}")
 !l::Send("{Right}")
 
-; Ctrl + Alt + T opens wsl terminal in $win directory defined in ~/.bashrc
-^!t::Run('wt wsl -e bash -c "source ~/.bashrc && cd \"$win\" && exec bash"')
+; Ctrl + Alt + T opens terminal
+^!t::Run('wt')
 
 ; Win (Shift) + Tab switches forward (backward) between workspaces
 #Tab::{
