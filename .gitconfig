@@ -1,0 +1,7 @@
+[user]
+	email = 129329889+Super-King-Crimson@users.noreply.github.com
+	name = Roland Dillon
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main

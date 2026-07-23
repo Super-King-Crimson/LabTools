@@ -1,0 +1,1 @@
+Start-Process -FilePath "wsl.exe" -ArgumentList "sleep infinity" -WindowStyle Hidden
