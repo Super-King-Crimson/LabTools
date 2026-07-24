@@ -91,7 +91,9 @@ InstallKeybdHook(True)
 !l::Send("{Right}")
 
 ; Ctrl + Alt + T opens terminal
-^!t::Run('wt')
+^!t::{
+	Run('wt -f')
+}
 
 ; Win (Shift) + Tab switches forward (backward) between workspaces
 #Tab::{

@@ -1,15 +1,13 @@
 ### Directory shortcuts and settings
-export dt="$HOME/Desktop"
+export dt="$HOME/OneDrive/Desktop"
 export dl="$HOME/Downloads"
-export dc="$HOME/Documents"
-export pc="$HOME/Pictures"
+export dc="$HOME/OneDrive/Documents"
+export pc="$HOME/OneDrive/Pictures"
 export vd="$HOME/Videos"
-export as="$HOME/Assets"
-export bn="$HOME/Binaries"
+export as="$HOME/OneDrive/Assets"
+export bn="$HOME/OneDrive/Binaries"
 export so="$HOME/src"
-export va="$HOME/Vault"
 export nts="$HOME/Documents/notes"
-export bin="$HOME/.local/bin"
 export rc="$HOME/.bashrc"
 
 export EDITOR=vim
