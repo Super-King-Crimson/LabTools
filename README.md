@@ -2,13 +2,19 @@
 - Use along with skconfig!
 
 # Getting Started
-- Turn on BitLocker and save the keys
 - Make a local windows account
+- Turn on BitLocker and save the keys
 - Run `wsl --install`
 
 # Installations
-- [Git Bash](https://git-scm.com/install/windows)
-    - To pull this repository down:
+## Misc
+- [AutoHotkey](https://www.autohotkey.com/)
+- [Parsec](https://parsec.app/downloads)
+- [Tailscale](https://parsec.app/downloads)
+
+## Git Bash
+- Install [here](https://git-scm.com/install/windows)
+- To pull this repository down:
 ```bash
 cd
 git clone --no-checkout git@github.com:Super-King-Crimson/LabTools.git
@@ -17,11 +23,8 @@ git reset --hard HEAD
 mv .git .skconfig
 /bin/rm -rf LabTools
 ```
-- [AutoHotkey](https://www.autohotkey.com/)
-- [Parsec](https://parsec.app/downloads)
-- [Tailscale](https://parsec.app/downloads)
 
-## Setup OpenSSH
+## OpenSSH
 - Open powershell as administrator
 - Run this to install the SSH client and server
 ```sh
@@ -63,18 +66,23 @@ $path = "<INSERT-PATH-HERE>"
 cat $path | ac C:\ProgramData\ssh\administrators_authorized_keys
 ```
 
-
 ## Get latest version of wt
 ```bash
 winget upgrade --id Microsoft.WindowsTerminal --source winget
 ```
 
-
 ## Change shell:startup folder
 - type `Win+r` and type regedit
-    - in the top bar, navigate to "Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"
-    - change the value to "%USERPROFILE%\path\to\Binaries\startup"
-    - restart
+- in the top bar, navigate to "Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders"
+- change the value of Startup to "%USERPROFILE%\path\to\Binaries\startup"
+- restart
 
+## Disable screen locking
+- type `Win+r` and type regedit
+- in the top bar, navigate to "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System"
+    - If the System folder isn't there, right-click Policies -> New -> Key, and name it System
+- Right-click inside the System folder -> New -> DWORD (32-bit) Value
+- Name the new value DisableLockWorkstation, and change its value to 1
+- restart
 
 ## You can make vim your editor using Binaries/vim.bat
